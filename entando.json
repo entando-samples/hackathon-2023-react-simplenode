@@ -1,0 +1,35 @@
+{
+    "microservices": [
+        {
+            "name": "simple-node-ms",
+            "stack": "node",
+            "healthCheckPath": "/api/health"
+        }
+    ],
+    "microfrontends": [
+        {
+            "name": "form-generator",
+            "customElement": "form-generator",
+            "stack": "react",
+            "type": "widget",
+            "group": "free",
+            "publicFolder": "public",
+            "titles": {
+                "en": "form-generator",
+                "it": "form-generator"
+            },
+            "apiClaims": [
+                {
+                    "name": "simple-node-api",
+                    "type": "internal",
+                    "serviceName": "simple-node-ms"
+                }
+            ]
+        }
+    ],
+    "svc": [],
+    "name": "hackathon-2023-react-simplenode",
+    "version": "0.0.2",
+    "description": "hackathon-2023-react-simplenode description",
+    "type": "bundle"
+}
