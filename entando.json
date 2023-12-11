@@ -25,11 +25,30 @@
                     "serviceName": "simple-node-ms"
                 }
             ]
+        },
+        {
+            "name": "form-renderer",
+            "customElement": "form-renderer",
+            "stack": "react",
+            "type": "widget",
+            "group": "free",
+            "publicFolder": "public",
+            "titles": {
+                "en": "form-renderer",
+                "it": "form-renderer"
+            },
+            "apiClaims": [
+                {
+                    "name": "simple-node-api",
+                    "type": "internal",
+                    "serviceName": "simple-node-ms"
+                }
+            ]
         }
     ],
     "svc": [],
     "name": "hackathon-2023-react-simplenode",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "description": "hackathon-2023-react-simplenode description",
     "type": "bundle"
 }
